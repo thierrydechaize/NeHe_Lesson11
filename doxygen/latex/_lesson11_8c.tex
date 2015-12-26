@@ -1,0 +1,275 @@
+\hypertarget{_lesson11_8c}{}\section{Référence du fichier C\+:/src/\+Open\+G\+L/\+Lesson11/\+Lesson11.c}
+\label{_lesson11_8c}\index{C\+:/src/\+Open\+G\+L/\+Lesson11/\+Lesson11.\+c@{C\+:/src/\+Open\+G\+L/\+Lesson11/\+Lesson11.\+c}}
+{\ttfamily \#include $<$windows.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$gl\textbackslash{}gl.\+h$>$}\\*
+{\ttfamily \#include $<$gl\textbackslash{}glu.\+h$>$}\\*
+{\ttfamily \#include $<$gl\textbackslash{}glext.\+h$>$}\\*
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+L\+R\+E\+S\+U\+L\+T C\+A\+L\+L\+B\+A\+C\+K \hyperlink{_lesson11_8c_a9135ea2a0d6fce68ba3b858226a31a4f}{Wnd\+Proc} (H\+W\+N\+D, U\+I\+N\+T, W\+P\+A\+R\+A\+M, L\+P\+A\+R\+A\+M)
+\item 
+bool \hyperlink{_lesson11_8c_ab297f3a05d02d1e923b2feb09384c321}{Ne\+He\+Load\+Bitmap} (L\+P\+T\+S\+T\+R sz\+File\+Name, G\+Luint $\ast$texid)
+\item 
+int \hyperlink{_lesson11_8c_a8dd15539ba90ae3670aa0a9f889d2236}{Load\+G\+L\+Textures} ()
+\item 
+G\+Lvoid \hyperlink{_lesson11_8c_a87bb84d489df61ed7b0c002584fd984f}{Re\+Size\+G\+L\+Scene} (G\+Lsizei width, G\+Lsizei height)
+\item 
+int \hyperlink{_lesson11_8c_aa4c387d3f1ebce6d57684b6a10c9b0ae}{Init\+G\+L} (G\+Lvoid)
+\item 
+int \hyperlink{_lesson11_8c_a52061247bdaeb770e3a1d59eefaad972}{Draw\+G\+L\+Scene} (G\+Lvoid)
+\item 
+G\+Lvoid \hyperlink{_lesson11_8c_af33a2273205c1491be5916d3091658e0}{Kill\+G\+L\+Window} (G\+Lvoid)
+\item 
+B\+O\+O\+L \hyperlink{_lesson11_8c_ae5f043c9df9b9e5e0e26d567feeeb1bc}{Create\+G\+L\+Window} (char $\ast$title, int width, int height, int bits, B\+O\+O\+L fullscreenflag)
+\item 
+int W\+I\+N\+A\+P\+I \hyperlink{_lesson11_8c_a661c2abc03926acfaeb93b4ae7db4943}{Win\+Main} (H\+I\+N\+S\+T\+A\+N\+C\+E \hyperlink{_lesson11_8c_a74029128723095e7bf00a71d46af8b24}{h\+Instance}, H\+I\+N\+S\+T\+A\+N\+C\+E h\+Prev\+Instance, L\+P\+S\+T\+R lp\+Cmd\+Line, int n\+Cmd\+Show)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+H\+D\+C \hyperlink{_lesson11_8c_a78f6446a0e13adc7b7b2f239112ac785}{h\+D\+C} =N\+U\+L\+L
+\item 
+H\+G\+L\+R\+C \hyperlink{_lesson11_8c_a874963259c7cd998acfe6e187fbdb4c1}{h\+R\+C} =N\+U\+L\+L
+\item 
+H\+W\+N\+D \hyperlink{_lesson11_8c_afec4341c234519e145bac6f0e5edaa51}{h\+Wnd} =N\+U\+L\+L
+\item 
+H\+I\+N\+S\+T\+A\+N\+C\+E \hyperlink{_lesson11_8c_a74029128723095e7bf00a71d46af8b24}{h\+Instance}
+\item 
+B\+O\+O\+L \hyperlink{_lesson11_8c_a55a8351b704275ad12988864918abb2a}{keys} \mbox{[}256\mbox{]}
+\item 
+B\+O\+O\+L \hyperlink{_lesson11_8c_a22389371583c4b8843e06da43399d6d9}{active} =T\+R\+U\+E
+\item 
+B\+O\+O\+L \hyperlink{_lesson11_8c_ab15a33c0173f2c5b6ac806c55cf7f0ba}{fullscreen} =T\+R\+U\+E
+\item 
+float \hyperlink{_lesson11_8c_a4fb675302026fb689985d079d018c6d7}{points} \mbox{[}45\mbox{]}\mbox{[}45\mbox{]}\mbox{[}3\mbox{]}
+\item 
+int \hyperlink{_lesson11_8c_a58e6140e8742d7955fd74b0925de4fa8}{wiggle\+\_\+count} = 0
+\item 
+G\+Lfloat \hyperlink{_lesson11_8c_a599f50b1636901ceee9b660ef480a49c}{xrot}
+\item 
+G\+Lfloat \hyperlink{_lesson11_8c_a9549138cf4d209303566523d805d8525}{yrot}
+\item 
+G\+Lfloat \hyperlink{_lesson11_8c_a0441705f3a5277b1381159b4a22807c4}{zrot}
+\item 
+G\+Lfloat \hyperlink{_lesson11_8c_a2f63da54be1bd9cb693f46e5dcae38a7}{hold}
+\item 
+G\+Luint \hyperlink{_lesson11_8c_a8dbc8c0cec45367c7d19c7dfa3768fae}{texture} \mbox{[}1\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{_lesson11_8c_ae5f043c9df9b9e5e0e26d567feeeb1bc}{}\index{Lesson11.\+c@{Lesson11.\+c}!Create\+G\+L\+Window@{Create\+G\+L\+Window}}
+\index{Create\+G\+L\+Window@{Create\+G\+L\+Window}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{Create\+G\+L\+Window(char $\ast$title, int width, int height, int bits, B\+O\+O\+L fullscreenflag)}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L Create\+G\+L\+Window (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{title, }
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{int}]{bits, }
+\item[{B\+O\+O\+L}]{fullscreenflag}
+\end{DoxyParamCaption}
+)}\label{_lesson11_8c_ae5f043c9df9b9e5e0e26d567feeeb1bc}
+This Code Creates Our Open\+G\+L Window. Parameters Are\+: $\ast$ title -\/ Title To Appear At The Top Of The Window $\ast$ width -\/ Width Of The G\+L Window Or Fullscreen Mode $\ast$ height -\/ Height Of The G\+L Window Or Fullscreen Mode $\ast$ bits -\/ Number Of Bits To Use For Color (8/16/24/32) $\ast$ fullscreenflag -\/ Use Fullscreen Mode (T\+R\+U\+E) Or Windowed Mode (F\+A\+L\+S\+E) 
+
+Définition à la ligne 332 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_a52061247bdaeb770e3a1d59eefaad972}{}\index{Lesson11.\+c@{Lesson11.\+c}!Draw\+G\+L\+Scene@{Draw\+G\+L\+Scene}}
+\index{Draw\+G\+L\+Scene@{Draw\+G\+L\+Scene}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{Draw\+G\+L\+Scene(\+G\+Lvoid)}]{\setlength{\rightskip}{0pt plus 5cm}int Draw\+G\+L\+Scene (
+\begin{DoxyParamCaption}
+\item[{G\+Lvoid}]{}
+\end{DoxyParamCaption}
+)}\label{_lesson11_8c_a52061247bdaeb770e3a1d59eefaad972}
+
+
+Définition à la ligne 220 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_aa4c387d3f1ebce6d57684b6a10c9b0ae}{}\index{Lesson11.\+c@{Lesson11.\+c}!Init\+G\+L@{Init\+G\+L}}
+\index{Init\+G\+L@{Init\+G\+L}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{Init\+G\+L(\+G\+Lvoid)}]{\setlength{\rightskip}{0pt plus 5cm}int Init\+G\+L (
+\begin{DoxyParamCaption}
+\item[{G\+Lvoid}]{}
+\end{DoxyParamCaption}
+)}\label{_lesson11_8c_aa4c387d3f1ebce6d57684b6a10c9b0ae}
+
+
+Définition à la ligne 189 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_af33a2273205c1491be5916d3091658e0}{}\index{Lesson11.\+c@{Lesson11.\+c}!Kill\+G\+L\+Window@{Kill\+G\+L\+Window}}
+\index{Kill\+G\+L\+Window@{Kill\+G\+L\+Window}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{Kill\+G\+L\+Window(\+G\+Lvoid)}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lvoid Kill\+G\+L\+Window (
+\begin{DoxyParamCaption}
+\item[{G\+Lvoid}]{}
+\end{DoxyParamCaption}
+)}\label{_lesson11_8c_af33a2273205c1491be5916d3091658e0}
+
+
+Définition à la ligne 284 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_a8dd15539ba90ae3670aa0a9f889d2236}{}\index{Lesson11.\+c@{Lesson11.\+c}!Load\+G\+L\+Textures@{Load\+G\+L\+Textures}}
+\index{Load\+G\+L\+Textures@{Load\+G\+L\+Textures}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{Load\+G\+L\+Textures()}]{\setlength{\rightskip}{0pt plus 5cm}int Load\+G\+L\+Textures (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_lesson11_8c_a8dd15539ba90ae3670aa0a9f889d2236}
+
+
+Définition à la ligne 150 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_ab297f3a05d02d1e923b2feb09384c321}{}\index{Lesson11.\+c@{Lesson11.\+c}!Ne\+He\+Load\+Bitmap@{Ne\+He\+Load\+Bitmap}}
+\index{Ne\+He\+Load\+Bitmap@{Ne\+He\+Load\+Bitmap}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{Ne\+He\+Load\+Bitmap(\+L\+P\+T\+S\+T\+R sz\+File\+Name, G\+Luint $\ast$texid)}]{\setlength{\rightskip}{0pt plus 5cm}bool Ne\+He\+Load\+Bitmap (
+\begin{DoxyParamCaption}
+\item[{L\+P\+T\+S\+T\+R}]{sz\+File\+Name, }
+\item[{G\+Luint $\ast$}]{texid}
+\end{DoxyParamCaption}
+)}\label{_lesson11_8c_ab297f3a05d02d1e923b2feb09384c321}
+
+
+Définition à la ligne 122 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_a87bb84d489df61ed7b0c002584fd984f}{}\index{Lesson11.\+c@{Lesson11.\+c}!Re\+Size\+G\+L\+Scene@{Re\+Size\+G\+L\+Scene}}
+\index{Re\+Size\+G\+L\+Scene@{Re\+Size\+G\+L\+Scene}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{Re\+Size\+G\+L\+Scene(\+G\+Lsizei width, G\+Lsizei height)}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lvoid Re\+Size\+G\+L\+Scene (
+\begin{DoxyParamCaption}
+\item[{G\+Lsizei}]{width, }
+\item[{G\+Lsizei}]{height}
+\end{DoxyParamCaption}
+)}\label{_lesson11_8c_a87bb84d489df61ed7b0c002584fd984f}
+
+
+Définition à la ligne 170 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_a661c2abc03926acfaeb93b4ae7db4943}{}\index{Lesson11.\+c@{Lesson11.\+c}!Win\+Main@{Win\+Main}}
+\index{Win\+Main@{Win\+Main}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{Win\+Main(\+H\+I\+N\+S\+T\+A\+N\+C\+E h\+Instance, H\+I\+N\+S\+T\+A\+N\+C\+E h\+Prev\+Instance, L\+P\+S\+T\+R lp\+Cmd\+Line, int n\+Cmd\+Show)}]{\setlength{\rightskip}{0pt plus 5cm}int W\+I\+N\+A\+P\+I Win\+Main (
+\begin{DoxyParamCaption}
+\item[{H\+I\+N\+S\+T\+A\+N\+C\+E}]{h\+Instance, }
+\item[{H\+I\+N\+S\+T\+A\+N\+C\+E}]{h\+Prev\+Instance, }
+\item[{L\+P\+S\+T\+R}]{lp\+Cmd\+Line, }
+\item[{int}]{n\+Cmd\+Show}
+\end{DoxyParamCaption}
+)}\label{_lesson11_8c_a661c2abc03926acfaeb93b4ae7db4943}
+
+
+Définition à la ligne 538 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_a9135ea2a0d6fce68ba3b858226a31a4f}{}\index{Lesson11.\+c@{Lesson11.\+c}!Wnd\+Proc@{Wnd\+Proc}}
+\index{Wnd\+Proc@{Wnd\+Proc}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{Wnd\+Proc(\+H\+W\+N\+D, U\+I\+N\+T, W\+P\+A\+R\+A\+M, L\+P\+A\+R\+A\+M)}]{\setlength{\rightskip}{0pt plus 5cm}L\+R\+E\+S\+U\+L\+T C\+A\+L\+L\+B\+A\+C\+K Wnd\+Proc (
+\begin{DoxyParamCaption}
+\item[{H\+W\+N\+D}]{h\+Wnd, }
+\item[{U\+I\+N\+T}]{u\+Msg, }
+\item[{W\+P\+A\+R\+A\+M}]{w\+Param, }
+\item[{L\+P\+A\+R\+A\+M}]{l\+Param}
+\end{DoxyParamCaption}
+)}\label{_lesson11_8c_a9135ea2a0d6fce68ba3b858226a31a4f}
+
+
+Définition à la ligne 477 du fichier Lesson11.\+c.
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{_lesson11_8c_a22389371583c4b8843e06da43399d6d9}{}\index{Lesson11.\+c@{Lesson11.\+c}!active@{active}}
+\index{active@{active}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{active}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L active =T\+R\+U\+E}\label{_lesson11_8c_a22389371583c4b8843e06da43399d6d9}
+
+
+Définition à la ligne 85 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_ab15a33c0173f2c5b6ac806c55cf7f0ba}{}\index{Lesson11.\+c@{Lesson11.\+c}!fullscreen@{fullscreen}}
+\index{fullscreen@{fullscreen}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{fullscreen}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L fullscreen =T\+R\+U\+E}\label{_lesson11_8c_ab15a33c0173f2c5b6ac806c55cf7f0ba}
+
+
+Définition à la ligne 86 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_a78f6446a0e13adc7b7b2f239112ac785}{}\index{Lesson11.\+c@{Lesson11.\+c}!h\+D\+C@{h\+D\+C}}
+\index{h\+D\+C@{h\+D\+C}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{h\+D\+C}]{\setlength{\rightskip}{0pt plus 5cm}H\+D\+C h\+D\+C =N\+U\+L\+L}\label{_lesson11_8c_a78f6446a0e13adc7b7b2f239112ac785}
+
+
+Définition à la ligne 79 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_a74029128723095e7bf00a71d46af8b24}{}\index{Lesson11.\+c@{Lesson11.\+c}!h\+Instance@{h\+Instance}}
+\index{h\+Instance@{h\+Instance}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{h\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}H\+I\+N\+S\+T\+A\+N\+C\+E h\+Instance}\label{_lesson11_8c_a74029128723095e7bf00a71d46af8b24}
+
+
+Définition à la ligne 82 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_a2f63da54be1bd9cb693f46e5dcae38a7}{}\index{Lesson11.\+c@{Lesson11.\+c}!hold@{hold}}
+\index{hold@{hold}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{hold}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lfloat hold}\label{_lesson11_8c_a2f63da54be1bd9cb693f46e5dcae38a7}
+
+
+Définition à la ligne 94 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_a874963259c7cd998acfe6e187fbdb4c1}{}\index{Lesson11.\+c@{Lesson11.\+c}!h\+R\+C@{h\+R\+C}}
+\index{h\+R\+C@{h\+R\+C}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{h\+R\+C}]{\setlength{\rightskip}{0pt plus 5cm}H\+G\+L\+R\+C h\+R\+C =N\+U\+L\+L}\label{_lesson11_8c_a874963259c7cd998acfe6e187fbdb4c1}
+
+
+Définition à la ligne 80 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_afec4341c234519e145bac6f0e5edaa51}{}\index{Lesson11.\+c@{Lesson11.\+c}!h\+Wnd@{h\+Wnd}}
+\index{h\+Wnd@{h\+Wnd}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{h\+Wnd}]{\setlength{\rightskip}{0pt plus 5cm}H\+W\+N\+D h\+Wnd =N\+U\+L\+L}\label{_lesson11_8c_afec4341c234519e145bac6f0e5edaa51}
+
+
+Définition à la ligne 81 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_a55a8351b704275ad12988864918abb2a}{}\index{Lesson11.\+c@{Lesson11.\+c}!keys@{keys}}
+\index{keys@{keys}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{keys}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L keys\mbox{[}256\mbox{]}}\label{_lesson11_8c_a55a8351b704275ad12988864918abb2a}
+
+
+Définition à la ligne 84 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_a4fb675302026fb689985d079d018c6d7}{}\index{Lesson11.\+c@{Lesson11.\+c}!points@{points}}
+\index{points@{points}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{points}]{\setlength{\rightskip}{0pt plus 5cm}float points\mbox{[}45\mbox{]}\mbox{[}45\mbox{]}\mbox{[}3\mbox{]}}\label{_lesson11_8c_a4fb675302026fb689985d079d018c6d7}
+
+
+Définition à la ligne 88 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_a8dbc8c0cec45367c7d19c7dfa3768fae}{}\index{Lesson11.\+c@{Lesson11.\+c}!texture@{texture}}
+\index{texture@{texture}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{texture}]{\setlength{\rightskip}{0pt plus 5cm}G\+Luint texture\mbox{[}1\mbox{]}}\label{_lesson11_8c_a8dbc8c0cec45367c7d19c7dfa3768fae}
+
+
+Définition à la ligne 96 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_a58e6140e8742d7955fd74b0925de4fa8}{}\index{Lesson11.\+c@{Lesson11.\+c}!wiggle\+\_\+count@{wiggle\+\_\+count}}
+\index{wiggle\+\_\+count@{wiggle\+\_\+count}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{wiggle\+\_\+count}]{\setlength{\rightskip}{0pt plus 5cm}int wiggle\+\_\+count = 0}\label{_lesson11_8c_a58e6140e8742d7955fd74b0925de4fa8}
+
+
+Définition à la ligne 89 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_a599f50b1636901ceee9b660ef480a49c}{}\index{Lesson11.\+c@{Lesson11.\+c}!xrot@{xrot}}
+\index{xrot@{xrot}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{xrot}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lfloat xrot}\label{_lesson11_8c_a599f50b1636901ceee9b660ef480a49c}
+
+
+Définition à la ligne 91 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_a9549138cf4d209303566523d805d8525}{}\index{Lesson11.\+c@{Lesson11.\+c}!yrot@{yrot}}
+\index{yrot@{yrot}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{yrot}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lfloat yrot}\label{_lesson11_8c_a9549138cf4d209303566523d805d8525}
+
+
+Définition à la ligne 92 du fichier Lesson11.\+c.
+
+\hypertarget{_lesson11_8c_a0441705f3a5277b1381159b4a22807c4}{}\index{Lesson11.\+c@{Lesson11.\+c}!zrot@{zrot}}
+\index{zrot@{zrot}!Lesson11.\+c@{Lesson11.\+c}}
+\subsubsection[{zrot}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lfloat zrot}\label{_lesson11_8c_a0441705f3a5277b1381159b4a22807c4}
+
+
+Définition à la ligne 93 du fichier Lesson11.\+c.
+
